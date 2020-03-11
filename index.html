@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Extrato</title>
+</head>
+<body class="container-fluid" onload="showExtrato()">
+    <header>
+        <h1>Extrato da Conta</h1>
+        <button type="submit" class="btn btn-outline-primary" onclick="clearExtrato()">Limpar Extrato</button>
+    </header>
+
+    <table id="extrato" class="table table-striped table-bordered"></table>
+    
+    <form id="formulario">
+        <h2>Novo registro</h2>
+        <div class="form-group">
+            <label for="InputData">Data</label>
+            <input type="date" class="form-control date" id="InputData">
+        </div>
+        <div class="form-group">
+            <label for="InputDescricao">Descrição</label>
+            <input type="text" class="form-control" id="InputDescricao" placeholder="Breve descrição">
+        </div>
+        <div class="form-group">
+            <label for="InputValor">Valor</label>
+            <input type="number" class="form-control" id="InputValor" placeholder="(R$)">
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="addLancamento()">Registrar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
